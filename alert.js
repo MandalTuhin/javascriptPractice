@@ -1,5 +1,1 @@
-let admin, name = "John";
-admin = name;
-
-alert(admin);
-
+console.log(1 / 0);
