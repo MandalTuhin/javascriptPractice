@@ -1,3 +1,5 @@
+"use strict"
+
 let age;
-age = "Hello World";
-console.log(typeof(age));
+age = null;
+console.log(typeof age);
