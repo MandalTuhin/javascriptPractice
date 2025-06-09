@@ -1,3 +1,3 @@
-let isGreater = 4 <= 3 ;
-
-console.log(isGreater);
+let age;
+age = "Hello World";
+console.log(typeof(age));
