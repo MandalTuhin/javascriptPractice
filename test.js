@@ -1,5 +1,11 @@
-"use strict"
+// type conversions;
+// 1. to string conversion;
 
-let age;
-age = null;
-console.log(typeof age);
+
+let value = true;
+
+console.log(typeof value); // will O/P : "boolean";
+
+value = String(value); // now value stores the string "true";
+
+console.log(typeof value); // should show "string";
