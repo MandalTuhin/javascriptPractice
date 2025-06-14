@@ -19,3 +19,10 @@ console.log(null >= 0) // true; here null is converted into number and zero grea
 console.log(null >= ''); // should retrun true;
 
 console.log(null == ""); // should return false;
+
+console.log(undefined > 0); // false since comparaison operator with undefined evaluates as NaN and NaN compared with anything returns false;
+console.log(undefined < 0); // simillar to above bahaviour
+
+console.log(undefined == 0); // false, since undefined with == operator is false for all operatnds except Null.
+
+
