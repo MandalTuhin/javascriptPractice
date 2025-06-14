@@ -1,8 +1,10 @@
 
-    let value = prompt('What is the "official" name of JavaScript?', '');
+    let value = prompt('Enter a number', '');
 
-    if (value == 'ECMAScript') {
-      alert('Right!');
+    if (value > 0) {
+      alert('1');
+    } else if(value == 0){
+      alert('0');
     } else {
-      alert("You don't know? ECMAScript!");
+      alert('-1');
     }
