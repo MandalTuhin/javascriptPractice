@@ -1,3 +1,15 @@
-let result, a = 2, b = 1;
-result = a + b < 4 ? 'Below' : 'Over';
-console.log(result);
+let message, login = 'random';
+
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+
+
+message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
+console.log(message);
