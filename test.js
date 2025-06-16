@@ -20,3 +20,11 @@ true || console.log("This statement will not be executed due to shortCircuit");
 
 false || console.log("This statement will be executed as there is no condition for shortCircuit here");
 
+// && behaves in a simillr way but it does the opposite. it returns the first falsy value in the chain and ignore 
+// values following the firs falsy value;(shortCircuit), and if all values are true, it retuns the value of the last operand;
+//eg:
+
+console.log("0" && "hello" && 1 && undefined && null); // o/p: "";
+
+
+
