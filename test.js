@@ -16,4 +16,7 @@ console.log("" || null || undefined);
 //
 console.log("" || null || undefined || 0);
 
+true || console.log("This statement will not be executed due to shortCircuit");
+
+false || console.log("This statement will be executed as there is no condition for shortCircuit here");
 
