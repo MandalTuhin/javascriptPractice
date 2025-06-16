@@ -1,28 +1,19 @@
-let a = 0;
-console.log(Boolean(a));
+let firstName = "";
+let lastName = "";
+let name = "";
 
-let b = '0';
-console.log(Boolean(b));
+console.log(firstName || lastName || name || "Anonymous");
 
-console.log(a === b);
+// this type of chain of or operators is only allowed in javascipt and not in other languages. 
+// here, the first true value is returned and is shortCircuited from that point. Ie, no further calculation.
+// but if there is no true value in the expression. then the expression results in the last value;
+// eg:
+//
+console.log("" || null || undefined);
 
-console.log(0 === false);
-
-console.log(null == undefined);
-console.log(null === undefined);
-
-console.log(null > 0); // false; null is converted to zero and 0 > zero is false;
-console.log(null == 0) // false; null and undefined are equal in == and are not equal to anything else;
-
-console.log(null >= 0) // true; here null is converted into number and zero greater than zero is true;
-
-console.log(null >= ''); // should retrun true;
-
-console.log(null == ""); // should return false;
-
-console.log(undefined > 0); // false since comparaison operator with undefined evaluates as NaN and NaN compared with anything returns false;
-console.log(undefined < 0); // simillar to above bahaviour
-
-console.log(undefined == 0); // false, since undefined with == operator is false for all operatnds except Null.
+// as we can see this statement results in undefined;
+// if we add somehthing like 0; it will print 0;
+//
+console.log("" || null || undefined || 0);
 
 
