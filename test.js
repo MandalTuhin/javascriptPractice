@@ -3,3 +3,5 @@ function showCount(count){
 }
 
 showCount(0);
+showCount(null);
+showCount();
