@@ -1,9 +1,5 @@
-let age = ;
+let height = undefined;
 
-if(!(age >= 14 && age <= 90)){
+console.log(console.log(height = height ?? 400));
 
-}
-
-if(age < 14 || age > 90){
-  
-}
+console.log(height);
