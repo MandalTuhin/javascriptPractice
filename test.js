@@ -1,5 +1,10 @@
-let height = undefined;
+let browser = 'Safari';
 
-console.log(console.log(height = height ?? 400));
+if(browser == "Edge"){
+  console.log("You've got the Edge!");
+} else if(browser == "Chrome" || browser == "Firefox" || browser == "Safari" || browser == "Opera"){
+  console.log("Okay we support these browsers too");
 
-console.log(height);
+} else{
+  console.log("We hope that this page looks ok");
+}
