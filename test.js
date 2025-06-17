@@ -1,5 +1,5 @@
-function showMessage(name, message = "not given"){
-  console.log(name + " : " + message);
+function showCount(count){
+  console.log(count ?? "unknown");
 }
 
-showMessage("Tuhin", undefined);
+showCount(0);
