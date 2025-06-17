@@ -1,27 +1,14 @@
-let name = prompt("Who's there?", '');
+let a = +prompt('a?', '');
 
-if(name === "Admin"){
- 
-  let passWord = prompt("Password?", '');
-  
-  if(passWord === "TheMaster"){
-    alert("Welcome");
+switch(a){
+  case 0:
+  case 1:
+  alert(a);
+  break;
 
-  } else if(passWord === null || passWord === ''){
-
-    alert("Canceled");
-
-  } else {
-    alert("Wrong Password");
-  }
-
-
-
-} else if(name === null || name === ''){
-  
-  alert("Canceled");
-
-} else {
-  alert("I don't know you");
+  case 2:
+  case 3:
+  alert("2, 3");
+    
 }
 
