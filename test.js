@@ -1,10 +1,11 @@
-function pow(b, n){
-  let res = 1;
-  for(let i = 1; i <= n; i++){
-    res *= b;
-  }
+let sayHi = function(){
+  console.log("Hello");
+};
 
-  return res;
-}
+copiedFunc = sayHi;
+copied2Func = copiedFunc;
+console.log(copied2Func);
+sayHi();
+copiedFunc();
+copied2Func();
 
-console.log(pow(3, 3)); // should return 27;
