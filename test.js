@@ -1,11 +1,10 @@
-function min(a, b){
-  return a > b ? b : a;
+function pow(b, n){
+  let res = 1;
+  for(let i = 1; i <= n; i++){
+    res *= b;
+  }
+
+  return res;
 }
 
-function min(a, b){
-  if (a > b) {
-    return b;
-  } 
-
-  return a;
-}
+console.log(pow(3, 3)); // should return 27;

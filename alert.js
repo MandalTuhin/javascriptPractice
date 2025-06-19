@@ -1,14 +1,14 @@
-let a = +prompt('a?', '');
+let givenNum = prompt("Enter a number: ", '');
 
-switch(a){
-  case 0:
-  case 1:
-  alert(a);
-  break;
+let times = prompt("Enter how many times you wan't to multiply this number: ", '');
 
-  case 2:
-  case 3:
-  alert("2, 3");
-    
+function pow(b, n){
+  let res = 1;
+  for(let i = 1; i <= n; i++){
+    res *= b;
+  }
+
+  return res;
 }
 
+alert(pow(givenNum, times));
