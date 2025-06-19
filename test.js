@@ -1,7 +1,11 @@
-function showCount(count){
-  console.log(count ?? "unknown");
+function min(a, b){
+  return a > b ? b : a;
 }
 
-showCount(0);
-showCount(null);
-showCount();
+function min(a, b){
+  if (a > b) {
+    return b;
+  } 
+
+  return a;
+}
